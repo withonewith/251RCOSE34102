@@ -4,7 +4,7 @@
 
 #define N 5
 
-// 외부 함수 선언
+
 extern void generate_processes(Process *plist, int n);
 extern void print_process_list(Process *plist, int n);
 extern void schedule_fcfs(Process *plist, int n);
@@ -14,7 +14,7 @@ extern void schedule_priority(Process *plist, int n);
 extern void schedule_priority_preemptive(Process *plist, int n);
 extern void schedule_rr(Process *plist, int n);
 
-// 깊은 복사 함수
+
 void copy_process_list(Process *dest, Process *src, int n) {
     for (int i = 0; i < n; i++) {
         dest[i] = src[i];
